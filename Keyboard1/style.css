@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* padding: 20px; */
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    gap: 20px;
+}
+.mail{
+   border: 20px solid rgb(221, 230, 230); 
+   /* max-width: 500px; */
+   width: 100%;
+   height: 100%;
+   margin: 20px;
+   /* padding: 20px; */
+}                            
+.in_mail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* .in_put{
+    width: 100%;
+    text-align: left;
+} */
+.to, .subject{
+    border: none;
+    border-bottom:2px solid #fefe;
+    width: 95%;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+.content{
+    width: 95%;
+    height: 25vh;
+}
+textarea{
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+.send{
+    margin:10px;
+}
+button{
+    margin: 10px 0 0;
+    padding: 10px 40px;
+    background: cornflowerblue;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.98);
+}
+.keyboard{
+    border: 1px solid;
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* background-image: linear-gradient(to right,
+    #8db7c1 0%,
+    #cc97c0 10%,
+    #8494af 70%,
+    #3cadd2 100%); */
+    background-image: linear-gradient(to right,
+    #cae279 0%,
+    #e07a7a 20%,
+    #dcb3ce 50%,
+    #3cadd2 90%);
+    /* background: linear-gradient( */
+        /* to right,  */
+        /* rgba(255, 0, 0, 1),     Red, fully opaque */
+        /* rgba(255, 0, 0, 0),     Red, fully transparent */
+        /* rgba(0, 0, 255, 0),     Blue, fully transparent */
+        /* rgba(0, 0, 255, 1)      Blue, fully opaque */
+      /* ); */
+}
+.alpha_numbers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.numbers{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+}
+ span{
+    border: 1px solid;
+    border-radius: 5px;
+    /* width: 100%; */
+    margin: 1px;
+    padding: 10px 20px;
+}
+.numbers3{
+    margin: 20px;
+}
+.numbers4{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    padding-top: 0;
+}
+.spacebar{
+    width: 100%;
+}
+.control{
+    background-color:crimson;
+}
+span.active{
+    /* background-color: cyan; */
+    background-color: rgb(255, 115, 0);
+}
+
+@media screen and (max-width:620px) {
+
+.keyboard{
+    width: 99%;
+}
+.numbers{
+    flex-wrap: wrap;
+}
+span{
+    margin: 2px;
+}
+.numbers4{
+    flex-wrap: wrap;
+}  
+.spacebar{
+    width: 40%;
+}
+}
+/* */ 
